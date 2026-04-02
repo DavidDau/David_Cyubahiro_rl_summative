@@ -1,0 +1,5 @@
+run_id,learning_rate,gamma,batch_size,buffer_size,mean_eval_reward,model_path,algo,ent_coef,steps_trained
+8,0.0004,0.96,,,-1711.88,models\pg\reinforce\reinforce_run_8.pt,reinforce,0.0,120000.0
+8,0.0003,0.995,,,-1803.24,models\pg\a2c\a2c_run_8.zip,a2c,0.02,
+8,0.0004,0.96,256.0,,-1825.4,models\pg\ppo_run_8.zip,ppo,0.0,
+10,0.0001,0.995,256.0,120000.0,-1850.32,models\dqn\dqn_run_10.zip,dqn,,
