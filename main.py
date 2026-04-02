@@ -112,9 +112,9 @@ def resolve_model_path(algo: str, model_path: str | None) -> Path:
     if algo == "ppo":
         return Path(load_best_from_csv(Path("models/pg/ppo_results.csv")))
     if algo == "a2c":
-        return Path(load_best_from_csv(Path("models/pg/a2c_results.csv")))
+        return Path(load_best_from_csv(Path("models/pg/a2c/a2c_results.csv")))
     if algo == "reinforce":
-        return Path(load_best_from_csv(Path("models/pg/reinforce_results.csv")))
+        return Path(load_best_from_csv(Path("models/pg/reinforce/reinforce_results.csv")))
     raise ValueError(f"Unknown algorithm: {algo}")
 
 

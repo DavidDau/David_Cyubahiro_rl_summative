@@ -1,0 +1,11 @@
+algo,run_id,learning_rate,gamma,ent_coef,batch_size,steps_trained,mean_eval_reward,model_path
+reinforce,1,0.001,0.95,0.0,,120000,-1862.5000000000005,models\pg\reinforce\reinforce_run_1.pt
+reinforce,2,0.0008,0.97,0.0,,120000,-1962.9600000000003,models\pg\reinforce\reinforce_run_2.pt
+reinforce,3,0.0007,0.98,0.001,,120000,-1887.28,models\pg\reinforce\reinforce_run_3.pt
+reinforce,4,0.0005,0.99,0.001,,120000,-1930.1200000000003,models\pg\reinforce\reinforce_run_4.pt
+reinforce,5,0.0003,0.99,0.002,,120000,-2076.04,models\pg\reinforce\reinforce_run_5.pt
+reinforce,6,0.0002,0.995,0.002,,120000,-1902.6,models\pg\reinforce\reinforce_run_6.pt
+reinforce,7,0.0001,0.995,0.005,,120000,-3201.44,models\pg\reinforce\reinforce_run_7.pt
+reinforce,8,0.0004,0.96,0.0,,120000,-1711.8799999999999,models\pg\reinforce\reinforce_run_8.pt
+reinforce,9,0.0006,0.98,0.001,,120000,-2015.2400000000002,models\pg\reinforce\reinforce_run_9.pt
+reinforce,10,0.0002,0.99,0.004,,120000,-2058.8,models\pg\reinforce\reinforce_run_10.pt

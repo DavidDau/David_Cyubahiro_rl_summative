@@ -63,8 +63,8 @@ python -m training.pg_training --timesteps 120000 --runs 10 --output models/pg -
 Outputs:
 
 - PPO table: `models/pg/ppo_results.csv`
-- A2C table: `models/pg/a2c_results.csv`
-- REINFORCE table: `models/pg/reinforce_results.csv`
+- A2C table: `models/pg/a2c/a2c_results.csv`
+- REINFORCE table: `models/pg/reinforce/reinforce_results.csv`
 
 ## Run Best Trained Agent
 

@@ -1,0 +1,11 @@
+algo,run_id,learning_rate,gamma,ent_coef,batch_size,mean_eval_reward,model_path
+a2c,1,0.0007,0.95,0.0,,-2229.92,models\pg\a2c\a2c_run_1.zip
+a2c,2,0.0005,0.97,0.01,,-1908.0100000000002,models\pg\a2c\a2c_run_2.zip
+a2c,3,0.0003,0.98,0.01,,-2823.840000000001,models\pg\a2c\a2c_run_3.zip
+a2c,4,0.0002,0.99,0.02,,-2050.6400000000003,models\pg\a2c\a2c_run_4.zip
+a2c,5,0.0001,0.99,0.0,,-2224.04,models\pg\a2c\a2c_run_5.zip
+a2c,6,0.0008,0.96,0.005,,-2322.96,models\pg\a2c\a2c_run_6.zip
+a2c,7,0.0004,0.995,0.01,,-1989.64,models\pg\a2c\a2c_run_7.zip
+a2c,8,0.0003,0.995,0.02,,-1803.2400000000002,models\pg\a2c\a2c_run_8.zip
+a2c,9,0.0002,0.98,0.03,,-1995.48,models\pg\a2c\a2c_run_9.zip
+a2c,10,0.0001,0.995,0.04,,-1924.8,models\pg\a2c\a2c_run_10.zip

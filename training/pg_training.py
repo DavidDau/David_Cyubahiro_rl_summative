@@ -216,6 +216,8 @@ def train_ppo(timesteps: int, runs: int, output_dir: Path):
 
 
 def train_a2c(timesteps: int, runs: int, output_dir: Path):
+    algo_dir = output_dir / "a2c"
+    algo_dir.mkdir(parents=True, exist_ok=True)
     rows = []
     for run_id, hp in enumerate(a2c_grid()[:runs], start=1):
         env = make_env(seed=100 + run_id)
@@ -230,7 +232,7 @@ def train_a2c(timesteps: int, runs: int, output_dir: Path):
         )
         model.learn(total_timesteps=timesteps, progress_bar=True)
         mean_reward = evaluate_sb3(model, episodes=5)
-        save_path = output_dir / f"a2c_run_{run_id}"
+        save_path = algo_dir / f"a2c_run_{run_id}"
         model.save(str(save_path))
         env.close()
 
@@ -238,10 +240,12 @@ def train_a2c(timesteps: int, runs: int, output_dir: Path):
         rows.append(row)
         print(f"[A2C] run={run_id} mean_eval_reward={mean_reward:.2f}")
 
-    write_results(rows, output_dir / "a2c_results.csv")
+    write_results(rows, algo_dir / "a2c_results.csv")
 
 
 def train_reinforce_runs(timesteps: int, runs: int, output_dir: Path):
+    algo_dir = output_dir / "reinforce"
+    algo_dir.mkdir(parents=True, exist_ok=True)
     rows = []
     for run_id, hp in enumerate(reinforce_grid()[:runs], start=1):
         policy, steps = train_reinforce(
@@ -251,7 +255,7 @@ def train_reinforce_runs(timesteps: int, runs: int, output_dir: Path):
             entropy_coef=hp["ent_coef"],
         )
         mean_reward = evaluate_reinforce(policy, episodes=5)
-        save_path = output_dir / f"reinforce_run_{run_id}.pt"
+        save_path = algo_dir / f"reinforce_run_{run_id}.pt"
         torch.save({"state_dict": policy.state_dict(), "config": hp}, save_path)
 
         row = {
@@ -266,7 +270,7 @@ def train_reinforce_runs(timesteps: int, runs: int, output_dir: Path):
         rows.append(row)
         print(f"[REINFORCE] run={run_id} mean_eval_reward={mean_reward:.2f}")
 
-    write_results(rows, output_dir / "reinforce_results.csv")
+    write_results(rows, algo_dir / "reinforce_results.csv")
 
 
 def parse_args():
