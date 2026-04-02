@@ -1,2 +1,0 @@
-algo,run_id,learning_rate,gamma,ent_coef,batch_size,mean_eval_reward,model_path
-a2c,1,0.0007,0.95,0.0,,-3508.8,models\pg_smoke\a2c_run_1.zip

@@ -1,0 +1,11 @@
+algo,run_id,learning_rate,gamma,batch_size,ent_coef,mean_eval_reward,model_path
+ppo,1,0.0003,0.95,64,0.0,-2698.350000000001,models\pg\ppo_run_1.zip
+ppo,2,0.0003,0.97,64,0.01,-1846.8000000000004,models\pg\ppo_run_2.zip
+ppo,3,0.0002,0.98,64,0.01,-1920.6800000000003,models\pg\ppo_run_3.zip
+ppo,4,0.0001,0.99,64,0.02,-1930.44,models\pg\ppo_run_4.zip
+ppo,5,0.0005,0.98,128,0.005,-3038.090000000001,models\pg\ppo_run_5.zip
+ppo,6,0.0003,0.99,128,0.01,-2000.2,models\pg\ppo_run_6.zip
+ppo,7,0.0002,0.995,128,0.02,-2061.7599999999998,models\pg\ppo_run_7.zip
+ppo,8,0.0004,0.96,256,0.0,-1825.4,models\pg\ppo_run_8.zip
+ppo,9,0.0001,0.995,256,0.01,-1962.6800000000003,models\pg\ppo_run_9.zip
+ppo,10,0.0002,0.99,64,0.03,-1985.7599999999998,models\pg\ppo_run_10.zip

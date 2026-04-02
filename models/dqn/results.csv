@@ -1,0 +1,11 @@
+run_id,learning_rate,gamma,batch_size,buffer_size,mean_eval_reward,model_path
+1,0.001,0.95,32,30000,-2480.3599999999997,models\dqn\dqn_run_1.zip
+2,0.0005,0.95,64,30000,-9318.249999999998,models\dqn\dqn_run_2.zip
+3,0.0003,0.97,64,50000,-5218.490000000001,models\dqn\dqn_run_3.zip
+4,0.0001,0.99,64,50000,-1879.0,models\dqn\dqn_run_4.zip
+5,0.0008,0.98,128,80000,-5884.110000000001,models\dqn\dqn_run_5.zip
+6,0.0002,0.99,128,80000,-11115.909999999987,models\dqn\dqn_run_6.zip
+7,0.0007,0.96,32,50000,-5543.06,models\dqn\dqn_run_7.zip
+8,0.0004,0.98,64,100000,-5391.990000000001,models\dqn\dqn_run_8.zip
+9,0.0003,0.995,128,100000,-2001.8400000000001,models\dqn\dqn_run_9.zip
+10,0.0001,0.995,256,120000,-1850.3200000000002,models\dqn\dqn_run_10.zip
