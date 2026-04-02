@@ -1,0 +1,2 @@
+algo,run_id,learning_rate,gamma,batch_size,ent_coef,mean_eval_reward,model_path
+ppo,1,0.0003,0.95,64,0.0,-1987.0400000000002,models\pg_smoke\ppo_run_1.zip

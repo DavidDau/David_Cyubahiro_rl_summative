@@ -1,0 +1,2 @@
+algo,run_id,learning_rate,gamma,ent_coef,batch_size,steps_trained,mean_eval_reward,model_path
+reinforce,1,0.001,0.95,0.0,,500,-5183.970000000001,models\pg_smoke\reinforce_run_1.pt
